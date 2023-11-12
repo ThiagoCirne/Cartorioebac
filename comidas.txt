@@ -3,3 +3,5 @@ bolacha
 alface
 feijao verde
 fava
+cafe
+acucar
