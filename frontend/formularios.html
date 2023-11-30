@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <main>
+        <form>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required placeholder="Digite seu nome"/>
+            <br><br>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required placeholder="email@email.com">
+            <br><br>
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone">
+            <br><br>
+            <label for="arquivo">Arquivo</label><br>
+            <input type="file" id="arquivo" name="arquivo">
+            <br><br>
+            <input type="checkbox" id="aceite" name="aceite">
+            <label for="aceite">Aceito os termos</label>
+            <br><br>
+            <label>Qual sua cor favorita?</label>
+            <br><br>
+            <input type="radio" id="cor-vermelha" name="cor-favorita" required>
+            <label for="cor-vermelha">Vermelho</label>
+            <input type="radio" id="cor-verde" name="cor-favorita" required>
+            <label for="cor-verde">Verde</label>
+            <input type="radio" name="cor-favorita" id="cor-azul" required>
+            <label for="cor-azul">Azul</label>
+            <br><br>
+            <label for="filme-favorito">Qual seu filme favorito?</label>
+            <!-- <select name="filme" id="filme-favorito" multiple>/ serve pra varias opçoes de escolha -->
+            <select name="filme" id="filme-favorito">
+                <option>O Senhor dos Anéis</option>
+                <option >A lagoa Azul</option>
+                <option >Matrix</option>
+                <option >Snoopy</option>
+            </select>
+            <br><br>
+            <label for="caixa-texto">Deixe sua mensagem</label><br>
+            <textarea name="caixa-texto" id="caixa-texto" cols="50" rows="10"></textarea>
+            <button type="submit" onclick="alert('Hello world')">Enviar</button>
+            <button type="reset">Limpar</button>
+
+        </form>
+    </main>
+    
+</body>
+</html>
